@@ -1,0 +1,22 @@
+{
+  "name": "shopmakers",
+  "version": "0.1.0",
+  "description": "Website of the Shopmakers agency.",
+  "author": {
+    "name": "somoscuatro",
+    "email": "tech@somoscuatro.es"
+  },
+  "license": "AGPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:somoscuatro/shopmakers.git"
+  },
+  "bugs": {
+    "email": "bugs@somoscuatro.es",
+    "url": "https://github.com/somoscuatro/shopmakers/issues"
+  },
+  "engines": {
+    "node": "16.x",
+    "npm": ">=6.0.0"
+  }
+}
