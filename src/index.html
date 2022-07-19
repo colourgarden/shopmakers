@@ -33,6 +33,13 @@
       data-domain="shopmakers.tech"
       src="https://plausible.io/js/plausible.js"
     ></script>
+    <script>
+      window.plausible =
+        window.plausible ||
+        function () {
+          (window.plausible.q = window.plausible.q || []).push(arguments);
+        };
+    </script>
   </head>
   <body>
     <header class="sticky top-0 bg-coconut drop-shadow-sm">
@@ -99,6 +106,7 @@
           <a href="#why-shopify">Why Shopify</a>
         </div>
         <a
+          data-analytics='"ContactUs"'
           class="inline-block w-fit rounded-full bg-selective-yellow py-2 px-4 text-prussian-blue"
           href="mailto:hello@shopmakers.tech"
         >
@@ -119,6 +127,7 @@
             based on Shopify
           </h2>
           <a
+            data-analytics='"QuoteRequest"'
             class="inline-block w-fit rounded-full bg-selective-yellow py-2 px-4 text-prussian-blue"
             href="mailto:hello@shopmakers.tech?subject=Quote Request"
           >
@@ -312,7 +321,11 @@
                   <a href="#why-us">Why Us</a>
                   <a href="#our-services">Our Services</a>
                   <a href="#why-shopify">Why Shopify</a>
-                  <a href="mailto:hello@shopmakers.tech">Contact Us</a>
+                  <a
+                    data-analytics='"ContactUs"'
+                    href="mailto:hello@shopmakers.tech"
+                    >Contact Us</a
+                  >
                 </div>
               </div>
               <div>
@@ -329,7 +342,9 @@
                 <p>
                   Carrer Pallars 193<br />
                   08005 Barcelona, Spain<br />
-                  <a href="mailto:hello@shopmakers.tech"
+                  <a
+                    data-analytics='"ContactUs"'
+                    href="mailto:hello@shopmakers.tech"
                     >hello@shopmakers.tech</a
                   >
                 </p>
@@ -348,5 +363,42 @@
         </div>
       </div>
     </footer>
+    <script>
+      let links = document.querySelectorAll('a[data-analytics]');
+      for (var i = 0; i < links.length; i++) {
+        links[i].addEventListener('click', handleLinkEvent);
+        links[i].addEventListener('auxclick', handleLinkEvent);
+      }
+
+      function handleLinkEvent(event) {
+        var link = event.target;
+        var middle = event.type == 'auxclick' && event.which == 2;
+        var click = event.type == 'click';
+        while (
+          link &&
+          (typeof link.tagName == 'undefined' ||
+            link.tagName.toLowerCase() != 'a' ||
+            !link.href)
+        ) {
+          link = link.parentNode;
+        }
+        if (middle || click) {
+          let attributes = link.getAttribute('data-analytics').split(/,(.+)/);
+          let events = [
+            JSON.parse(attributes[0]),
+            JSON.parse(attributes[1] || '{}'),
+          ];
+          plausible(...events);
+        }
+        if (!link.target) {
+          if (!(event.ctrlKey || event.metaKey || event.shiftKey) && click) {
+            setTimeout(function () {
+              location.href = link.href;
+            }, 150);
+            event.preventDefault();
+          }
+        }
+      }
+    </script>
   </body>
 </html>
