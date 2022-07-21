@@ -1,0 +1,94 @@
+{
+  "navigation": {
+    "why-us": "Why Us",
+    "our-services": "Our Services",
+    "why-shopify": "Why Shopify"
+  },
+  "cta": {
+    "contact-us": "Contact Us",
+    "quote-request": "Request a quote"
+  },
+  "site-footer": {
+    "slogan": "We craft profitable, high-quality, scalable and performant solutions based on Shopify",
+    "columns-title": {
+      "resources": "Resources",
+      "languages": "Languages",
+      "contacts": "Contacts"
+    }
+  },
+  "home": {
+    "seo": {
+      "title": "shopmakers | your shopify experts",
+      "description": "We craft profitable, high-quality, scalable and performant solutions based on Shopify"
+    },
+    "sections": {
+      "hero": {
+        "title": "Boost your business with a first class ecommerce",
+        "subtitle": "We craft profitable, high-quality, scalable and performant solutions based on Shopify"
+      },
+      "why-us": {
+        "title": "Why Us",
+        "cards": {
+          "0": {
+            "title": "Because we have experience",
+            "content": "Our professional team is talented and able to respond to your needs. We specialise in Shopify: a flexible and efficient solution for your business."
+          },
+          "1": {
+            "title": "Because we care",
+            "content": "Your goals are at the centre of our work. Every client is unique and our response is customised. We offer you a holistic view of the complexity of the market."
+          },
+          "2": {
+            "title": "Because you won't be alone",
+            "content": "We like to create a relationship based on listening. We are communicative, helpful, flexible and organised. We love creating opportunities to meet."
+          },
+          "3": {
+            "title": "Because we can help you",
+            "content": "You will have more time and energy to focus on your priorities. You will be able to focus on the growth of your company without having to solve the most complex technical issues."
+          },
+          "4": {
+            "title": "Because you can trust us",
+            "content": "We keep our promises. We are punctual, transparent and consistent in our commitment. Our focus is customer-centred. This allows us to offer a high-quality service."
+          }
+        }
+      },
+      "our-services": {
+        "title": "Our Services",
+        "cards": {
+          "0": {
+            "title": "User Experience",
+            "content": "We use <strong>UX Research</strong> and <strong>User Interface Design</strong> to provide your customers with an outstanding shopping experience, paying special attention to improvements in <strong>performance</strong> and <strong>accessibility</strong>."
+          },
+          "1": {
+            "title": "Development",
+            "content": "Our experience with the latest modern web technologies allow us to create blazing fast <strong>headless themes</strong> and customised <strong>apps</strong>. We care about code quality, standards and performances. A lot."
+          },
+          "2": {
+            "title": "Integrations",
+            "content": " We connect your shop with your business tools. No matter which system you currently use, we can integrate your Shopify website with any <strong>CRM</strong>, <strong>ERP</strong>, <strong>PIM</strong>, <strong>payment gateway</strong> or any other <strong>third party service</strong>."
+          },
+          "3": {
+            "title": "Media Contents",
+            "content": "We present your products and services in the most attractive way. We specialise in creating stunning <strong>product images</strong>, awesome <strong>high-quality videos</strong> and <strong>AR experiences</strong> that will enchant your customers."
+          }
+        }
+      },
+      "why-shopify": {
+        "title": "Why Shopify",
+        "cards": {
+          "0": {
+            "title": "Secure & Reliable",
+            "content": "Shopify takes security seriously. It implements strong access measures, protects cardholder data and maintains a vulnerability managment program. All stores powered by Shopify are Level 1 PCI DSS compliant."
+          },
+          "1": {
+            "title": "Affordable",
+            "content": "Shopify offers several plans and price options to choose from. Compared to self-hosted shops, it has an incredible price-to-quality ratio. Even the cheapest plan includes essential features and the App Store includes thousands of free apps."
+          },
+          "2": {
+            "title": "Performant & Scalable",
+            "content": "Shopify can equip your site to easily handle high traffic volumes and sales spikes. Shopify cloud-based infrastructure is designed for resiliency, with servers capable of handling thousands of transactions per minute. The result is 99.99% uptime."
+          }
+        }
+      }
+    }
+  }
+}

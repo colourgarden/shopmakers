@@ -1,0 +1,5 @@
+const createCSP = (nonce: string): string => {
+  return `script-src 'nonce-${nonce}' 'strict-dynamic' 'unsafe-inline' 'unsafe-eval' plausible.io 'self';`;
+};
+
+export default createCSP;

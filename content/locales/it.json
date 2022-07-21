@@ -1,0 +1,21 @@
+{
+  "navigation": {
+    "why-us": "Perché sceglierci",
+    "our-services": "I nostri servizi",
+    "why-shopify": "Perché Shopify"
+  },
+  "cta": {
+    "contact-us": "Contattaci"
+  },
+  "site-footer": {
+    "slogan": "Realizziamo soluzioni di alta qualità, scalabili e performanti, basate su Shopify",
+    "column-title": {
+      "resources": "Contenuti",
+      "languages": "Lingue",
+      "contacts": "Contatti"
+    }
+  },
+  "home": {
+    "welcome": "Ciao!"
+  }
+}
