@@ -12,6 +12,11 @@ img-src 'self' blob: data:;
 font-src 'self' data:;
 manifest-src 'self';
 style-src 'self' 'unsafe-inline';
+connect-src 'self' ${
+  process.env.NODE_ENV === 'production'
+    ? 'https://vitals.vercel-insights.com'
+    : ''
+};
 `;
 
 const PermissionsPolicy = `
