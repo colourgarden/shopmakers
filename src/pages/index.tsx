@@ -107,11 +107,12 @@ const Home: React.FC = () => {
                     <h3 className='pb-4 text-lg uppercase'>
                       {i18n.t(`home.sections.why-shopify.cards.${index}.title`)}
                     </h3>
-                    <p>
-                      {i18n.t(
-                        `home.sections.why-shopify.cards.${index}.content`,
-                      )}
-                    </p>
+                    <p
+                      dangerouslySetInnerHTML={{
+                        __html: i18n.t(
+                          `home.sections.why-shopify.cards.${index}.content`,
+                        ),
+                      }}></p>
                   </div>
                 );
               })}
