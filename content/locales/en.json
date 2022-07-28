@@ -35,11 +35,11 @@
           },
           "1": {
             "title": "Because we care",
-            "content": "Your goals are at the centre of our work. Every client is unique and our response is customised. We offer you a holistic view of the complexity of the market."
+            "content": "Your goals are at the centre of our work. Every client is unique and our response is customised. We offer you a holistic view of the complexity of your market."
           },
           "2": {
             "title": "Because you won't be alone",
-            "content": "We like to create a relationship based on listening. We are communicative, helpful, flexible and organised. We love creating opportunities to meet."
+            "content": "We like to build relationships based on listening. We are communicative, helpful, efficient and organised. We love creating opportunities to meet."
           },
           "3": {
             "title": "Because we can help you",
@@ -56,15 +56,15 @@
         "cards": {
           "0": {
             "title": "User Experience",
-            "content": "We use <strong>UX Research</strong> and <strong>User Interface Design</strong> to provide your customers with an outstanding shopping experience, paying special attention to improvements in <strong>performance</strong> and <strong>accessibility</strong>."
+            "content": "We use <strong>UX Research</strong> and <strong>User Interface Design</strong> to provide your customers with an outstanding shopping experience, paying special attention to <strong>performance</strong> and <strong>accessibility</strong>."
           },
           "1": {
             "title": "Development",
-            "content": "Our experience with the latest modern web technologies allow us to create blazing fast <strong>headless themes</strong> and customised <strong>apps</strong>. We care about code quality, standards and performances. A lot."
+            "content": "Our experience with the latest web technologies allow us to create blazing fast <strong>headless themes</strong> and <strong>customised apps</strong>. We care a lot about code quality, standards and performances."
           },
           "2": {
             "title": "Integrations",
-            "content": " We connect your shop with your business tools. No matter which system you currently use, we can integrate your Shopify website with any <strong>CRM</strong>, <strong>ERP</strong>, <strong>PIM</strong>, <strong>payment gateway</strong> or any other <strong>third party service</strong>."
+            "content": "We connect your shop with your business tools. No matter which system you currently use, we can integrate your Shopify website with any <strong>CRM</strong>, <strong>ERP</strong>, <strong>PIM</strong>, <strong>payment gateway</strong> or any other <strong>third party service</strong>."
           },
           "3": {
             "title": "Media Contents",
@@ -77,7 +77,7 @@
         "cards": {
           "0": {
             "title": "Secure & Reliable",
-            "content": "Shopify takes security seriously. It implements strong access measures, protects cardholder data and maintains a vulnerability managment program. All stores powered by Shopify are Level 1 PCI DSS compliant."
+            "content": "Shopify takes security seriously. It implements strong access measures, protects cardholder data and maintains a vulnerability management program. All stores powered by Shopify are <a href=\"https://help.shopify.com/en/questions/compliance#/reports\">Level 1 PCI DSS compliant</a>."
           },
           "1": {
             "title": "Affordable",
