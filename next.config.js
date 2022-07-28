@@ -14,7 +14,7 @@ manifest-src 'self';
 style-src 'self' 'unsafe-inline';
 connect-src 'self' ${
   process.env.NODE_ENV === 'production'
-    ? 'https://vitals.vercel-insights.com'
+    ? 'https://vitals.vercel-insights.com https://plausible.io'
     : ''
 };
 `;
