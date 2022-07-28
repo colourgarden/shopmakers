@@ -69,6 +69,7 @@ const Home: React.FC = () => {
                 src='/images/illustrations/services.svg'
                 width={526}
                 height={462}
+                loading='lazy'
                 alt='A person running out of a mobile device with cart full of great products.'
               />
             </div>
@@ -122,6 +123,7 @@ const Home: React.FC = () => {
                 src='/images/illustrations/shopify.svg'
                 width={560}
                 height={356}
+                loading='lazy'
                 alt='A person managing with ease a great developed ecommerce.'
               />
             </div>
