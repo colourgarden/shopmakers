@@ -2,7 +2,8 @@
   "navigation": {
     "why-us": "Por qué elegirnos",
     "our-services": "Nuestros servicios",
-    "why-shopify": "Por qué Shopify"
+    "why-shopify": "Por qué Shopify",
+    "blog": "Blog"
   },
   "cta": {
     "contact-us": "Contáctanos",
@@ -14,7 +15,8 @@
       "resources": "Secciones",
       "languages": "Idiomas",
       "contacts": "Contacto"
-    }
+    },
+    "cookies": "Este sitio web no utiliza cookies para rastrearte."
   },
   "home": {
     "seo": {
@@ -27,6 +29,7 @@
         "subtitle": "Construimos soluciones rentables, de alta calidad, escalables y veloces basadas en Shopify"
       },
       "why-us": {
+        "id": "por-que-elegirnos",
         "title": "Por qué elegirnos",
         "cards": {
           "0": {
@@ -52,6 +55,7 @@
         }
       },
       "our-services": {
+        "id": "nuestros-servicios",
         "title": "Nuestros servicios",
         "cards": {
           "0": {
@@ -73,6 +77,7 @@
         }
       },
       "why-shopify": {
+        "id": "por-que-shopify",
         "title": "Por qué Shopify",
         "cards": {
           "0": {
@@ -88,7 +93,15 @@
             "content": "Shopify puede preparar tu sitio para manejar fácilmente altos volúmenes de tráfico y picos de ventas. La infraestructura basada en la nube de Shopify está diseñada para ser resistente, con servidores capaces de manejar miles de transacciones por minuto. El resultado es un 99,99% de tiempo de disponibilidad."
           }
         }
+      },
+      "blog": {
+        "id": "blog",
+        "title": "Blog"
       }
     }
+  },
+  "blog": {
+    "min-read": "minutos de lectura",
+    "published-on": "Publicado el"
   }
 }

@@ -1,10 +1,3 @@
-type SectionProps = {
-  id?: string;
-  classes?: string;
-  withContainer?: boolean;
-  children: JSX.Element;
-};
-
 const Section = ({
   id = '',
   classes = '',

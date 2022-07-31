@@ -17,14 +17,17 @@ module.exports = {
       'blue-green': '#219EBC',
       'prussian-blue': '#023047',
       'selective-yellow': '#FFB703',
+      'selective-yellow-300': '#FFBE1C',
       tangerine: '#FB8500',
       'tangerine-200': 'rgba(251, 133, 0, 0.20)',
+      lotion: '#FAFAFA',
       coconut: '#FFF',
     },
     fontFamily: {
       sans: ['Jost', ...defaultTheme.fontFamily.sans],
     },
     fontSize: {
+      xs: ['12px', '150%'],
       sm: ['14px', '150%'],
       base: ['16px', '150%'],
       lg: ['18px', '150%'],

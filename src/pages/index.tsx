@@ -4,9 +4,11 @@ import Image from 'next/image';
 import Container from 'components/Container';
 import Section from 'components/Section';
 
+import { getBlogsInformation } from 'utils/mdx';
 import type { GetStaticProps } from 'next';
+import BlogCard from 'components/Blog/Card';
 
-const Home: React.FC = () => {
+const Home = ({ blogs }: HomeProps) => {
   const i18n = useI18n();
 
   return (
@@ -39,7 +41,7 @@ const Home: React.FC = () => {
           </div>
         </div>
       </Section>
-      <Section id='why-us'>
+      <Section id={i18n.t('home.sections.why-us.id')}>
         <>
           <h2 className='pb-16 text-2xl'>
             {i18n.t('home.sections.why-us.title')}
@@ -58,7 +60,9 @@ const Home: React.FC = () => {
           </div>
         </>
       </Section>
-      <Section id='our-services' classes='bg-tangerine-200'>
+      <Section
+        id={i18n.t('home.sections.our-services.id')}
+        classes='bg-tangerine-200'>
         <>
           <h2 className='pb-16 text-2xl'>
             {i18n.t('home.sections.our-services.title')}
@@ -95,7 +99,7 @@ const Home: React.FC = () => {
           </div>
         </>
       </Section>
-      <Section id='why-shopify'>
+      <Section id={i18n.t('home.sections.why-shopify.id')}>
         <>
           <h2 className='pb-16 text-2xl'>
             {i18n.t('home.sections.why-shopify.title')}
@@ -130,15 +134,36 @@ const Home: React.FC = () => {
           </div>
         </>
       </Section>
+      {blogs.length > 0 ? (
+        <Section
+          id={i18n.t('home.sections.blog.id')}
+          classes='bg-light-cornflower-blue-200'>
+          <>
+            <h2 className='pb-16 text-2xl'>
+              {i18n.t('home.sections.blog.title')}
+            </h2>
+            <div className='flex gap-x-8'>
+              {blogs.map((blog) => (
+                <BlogCard key={blog.slug} {...blog} />
+              ))}
+            </div>
+          </>
+        </Section>
+      ) : (
+        ''
+      )}
     </Container>
   );
 };
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
   const language = await import(`../../content/locales/${locale}.json`);
+  const blogs = getBlogsInformation(locale);
+
   return {
     props: {
       lngDict: language.default,
+      blogs,
     },
   };
 };

@@ -2,6 +2,7 @@ import { I18nProvider } from 'next-localization';
 import { useRouter } from 'next/router';
 
 import '../styles/globals.css';
+import '../styles/code.css';
 
 import type { AppProps } from 'next/app';
 

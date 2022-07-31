@@ -2,20 +2,106 @@
   "navigation": {
     "why-us": "Perché sceglierci",
     "our-services": "I nostri servizi",
-    "why-shopify": "Perché Shopify"
+    "why-shopify": "Perché Shopify",
+    "blog": "Blog"
   },
   "cta": {
-    "contact-us": "Contattaci"
+    "contact-us": "Contattaci",
+    "quote-request": "Chiedi un preventivo"
   },
   "site-footer": {
-    "slogan": "Realizziamo soluzioni di alta qualità, scalabili e performanti, basate su Shopify",
-    "column-title": {
-      "resources": "Contenuti",
+    "slogan": "**",
+    "columns-title": {
+      "resources": "Sezioni",
       "languages": "Lingue",
       "contacts": "Contatti"
-    }
+    },
+    "cookies": "Questo sito non utilizza cookies per tracciarti!"
   },
   "home": {
-    "welcome": "Ciao!"
+    "seo": {
+      "title": "shopmakers | i tuoi esperti shopify",
+      "description": "**"
+    },
+    "sections": {
+      "hero": {
+        "title": "Potenzia la tua attività con un ecommerce di prima classe",
+        "subtitle": "Costruiamo soluzioni convenienti, di alta qualità, affidabili e veloci basate su Shopify"
+      },
+      "why-us": {
+        "id": "perche-sceglierci",
+        "title": "Perché sceglierci",
+        "cards": {
+          "0": {
+            "title": "Perché abbiamo una lunga esperienza",
+            "content": "Il nostro team professionale è ricco di talenti e in grado di rispondere alle tue esigenze. Siamo specializzati in Shopify: una soluzione flessibile ed efficiente per la tua attività."
+          },
+          "1": {
+            "title": "Perché ci importa",
+            "content": "I tuoi obiettivi sono al centro del nostro lavoro. Ogni cliente è unico e la nostra risposta è personalizzata. Ti proponiamo una visione olistica della complessità del mercato."
+          },
+          "2": {
+            "title": "**",
+            "content": "Ci piace costruire relazioni basate sull’ascolto. Siamo comunicativi, disponibili, flessibili ed organizzati. Amiamo creare occasioni d’incontro."
+          },
+          "3": {
+            "title": "Perché possiamo aiutarti",
+            "content": "Avrai più tempo ed energia per dedicarti alle tue priorità. Potrai focalizzarti sulla crescita della tua azienda senza dover risolvere le questioni tecniche più complesse."
+          },
+          "4": {
+            "title": "Perché ti puoi fidare di noi",
+            "content": "Manteniamo le promesse. Siamo puntuali, trasparenti e costanti nell’impegno. La nostra attenzione è centrata sul cliente. Tutto questo ci permette di offrire un servizio di alta qualità."
+          }
+        }
+      },
+      "our-services": {
+        "id": "i-nostri-servici",
+        "title": "I nostri servizi",
+        "cards": {
+          "0": {
+            "title": "User experience",
+            "content": "Aplicamos la <strong>investigación de experiencia de usuario</strong> y el <strong>diseño de interfaz</strong> para garantizar una experiencia de compra excepcional, prestando especial atención al <strong>rendimiento</strong> y la <strong>accesibilidad</strong>."
+          },
+          "1": {
+            "title": "Sviluppo",
+            "content": "La nostra esperienza con le più recenti tecnologie web ci permette di creare <strong>temi <i>headless</i></strong> ed <strong>applicazioni personalizzate</strong> performanti. Teniamo molto alla qualità del codice, agli standard e alle prestazioni."
+          },
+          "2": {
+            "title": "Integrazioni",
+            "content": "Colleghiamo il tuo negozio con i tuoi strumenti di business. Indipendentemente dal sistema attualmente in uso, possiamo integrare il tuo sito Shopify con qualsiasi <strong>CRM</strong>, <strong>ERP</strong>, <strong>PIM</strong>, <strong>gateway di pagamento</strong> o altri <strong>servizi di terze parti</strong> ."
+          },
+          "3": {
+            "title": "Multimedia",
+            "content": "Presentiamo i tuoi prodotti e i tuoi servizi nel modo più attraente possibile. Siamo specializzati nella creazione di <strong>immagini di prodotto</strong> straordinarie, <strong>video di alta qualità</strong> e <strong>Realtà Aumentata</strong> che conquisteranno i tuoi clienti."
+          }
+        }
+      },
+      "why-shopify": {
+        "id": "perche-shopify",
+        "title": "Perché Shopify",
+        "cards": {
+          "0": {
+            "title": "Sicuro ed affidabile",
+            "content": "Shopify considera seriamente la sicurezza. Implementa rigorosi controlli di accesso, protegge i dati dei titolari di carta di credito e mantiene un programma di gestione delle vulnerabilità. Tutti i sistemi di Shopify sono conformi agli standard PCI DSS di livello 1."
+          },
+          "1": {
+            "title": "Conveniente",
+            "content": "Shopify offre differenti piani ed abbonamenti. Rispetto agli ecommerce self-hosted, offre un eccellente rapport qualità-prezzo. Anche il piano più economico include tutte le funzioni essenziali e l'App Store vanta migliaia di applicazioni gratutite."
+          },
+          "2": {
+            "title": "Veloce e resistente",
+            "content": "Shopify è in grado di preparare il vostro sito per gestire facilmente alti volumi di traffico e picchi di vendita. L'infrastruttura basata sul cloud di Shopify è progettata per essere resistente, con server in grado di gestire migliaia di transazioni al minuto. Il risultato è un uptime del 99,99%."
+          }
+        }
+      },
+      "blog": {
+        "id": "blog",
+        "title": "Blog"
+      }
+    }
+  },
+  "blog": {
+    "min-read": "minuti di lettura",
+    "published-on": "Pubblicato il"
   }
 }

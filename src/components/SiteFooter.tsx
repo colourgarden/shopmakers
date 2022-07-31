@@ -5,7 +5,7 @@ import { useI18n } from 'next-localization';
 
 import getLanguageName from '../utils/helpers';
 
-const SiteFooter: React.FC = () => {
+const SiteFooter = ({ alternate }: SiteFooterProps) => {
   const i18n = useI18n();
   const router = useRouter();
 
@@ -31,11 +31,24 @@ const SiteFooter: React.FC = () => {
                   {i18n.t('site-footer.columns-title.resources')}
                 </h3>
                 <div className='flex flex-col'>
-                  <a href='#why-us'>{i18n.t('navigation.why-us')}</a>
-                  <a href='#our-services'>
-                    {i18n.t('navigation.our-services')}
-                  </a>
-                  <a href='#why-shopify'>{i18n.t('navigation.why-shopify')}</a>
+                  <Link
+                    href={`/#${i18n.t('home.sections.why-us.id')}`}
+                    passHref>
+                    <a href='#dummy'>{i18n.t('navigation.why-us')}</a>
+                  </Link>
+                  <Link
+                    href={`/#${i18n.t('home.sections.our-services.id')}`}
+                    passHref>
+                    <a href='#dummy'>{i18n.t('navigation.our-services')}</a>
+                  </Link>
+                  <Link
+                    href={`/#${i18n.t('home.sections.why-shopify.id')}`}
+                    passHref>
+                    <a href='#dummy'>{i18n.t('navigation.why-shopify')}</a>
+                  </Link>
+                  <Link href={`/#${i18n.t('home.sections.blog.id')}`} passHref>
+                    <a href='#dummy'>{i18n.t('navigation.blog')}</a>
+                  </Link>
                   <a
                     data-analytics='"ContactUs"'
                     href='mailto:hello@shopmakers.tech'>
@@ -59,7 +72,15 @@ const SiteFooter: React.FC = () => {
                            * false error.
                            * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/issues/402
                            */}
-                          <Link href={router.pathname} passHref locale={locale}>
+
+                          <Link
+                            href={
+                              typeof alternate !== 'object'
+                                ? `/${locale}`
+                                : `/${locale}${alternate[locale]}`
+                            }
+                            passHref
+                            locale={locale}>
                             <a href='#dummy'>{getLanguageName(locale)}</a>
                           </Link>
                         </li>
@@ -72,7 +93,7 @@ const SiteFooter: React.FC = () => {
                 <h3 className='pb-2.5 uppercase'>
                   {i18n.t('site-footer.columns-title.contacts')}
                 </h3>
-                <p>
+                <address className='not-italic'>
                   Carrer Pallars 193
                   <br />
                   08005 Barcelona, Spain
@@ -82,7 +103,7 @@ const SiteFooter: React.FC = () => {
                     href='mailto:hello@shopmakers.tech'>
                     hello@shopmakers.tech
                   </a>
-                </p>
+                </address>
               </div>
             </div>
           </div>
@@ -92,7 +113,7 @@ const SiteFooter: React.FC = () => {
             somoscuatro 2020 S.L. - Carrer Bailén 41, 1º 2ªB, 08010 Barcelona,
             Spain - VAT: ES B01885813
           </p>
-          <p>This website does not use cookies to track you!</p>
+          <p>{i18n.t('site-footer.cookies')}</p>
         </div>
       </div>
     </footer>

@@ -2,7 +2,8 @@
   "navigation": {
     "why-us": "Why Us",
     "our-services": "Our Services",
-    "why-shopify": "Why Shopify"
+    "why-shopify": "Why Shopify",
+    "blog": "Blog"
   },
   "cta": {
     "contact-us": "Contact Us",
@@ -14,7 +15,8 @@
       "resources": "Resources",
       "languages": "Languages",
       "contacts": "Contacts"
-    }
+    },
+    "cookies": "This website does not use cookies to track you!"
   },
   "home": {
     "seo": {
@@ -27,6 +29,7 @@
         "subtitle": "We craft profitable, high-quality, scalable and performant solutions based on Shopify"
       },
       "why-us": {
+        "id": "why-us",
         "title": "Why Us",
         "cards": {
           "0": {
@@ -52,6 +55,7 @@
         }
       },
       "our-services": {
+        "id": "our-services",
         "title": "Our Services",
         "cards": {
           "0": {
@@ -73,6 +77,7 @@
         }
       },
       "why-shopify": {
+        "id": "why-shopify",
         "title": "Why Shopify",
         "cards": {
           "0": {
@@ -88,7 +93,15 @@
             "content": "Shopify can equip your site to easily handle high traffic volumes and sales spikes. Shopify cloud-based infrastructure is designed for resiliency, with servers capable of handling thousands of transactions per minute. The result is 99.99% uptime."
           }
         }
+      },
+      "blog": {
+        "id": "blog",
+        "title": "Blog"
       }
     }
+  },
+  "blog": {
+    "min-read": "min read",
+    "published-on": "Published on"
   }
 }
