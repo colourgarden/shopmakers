@@ -10,7 +10,7 @@
     "quote-request": "Chiedi un preventivo"
   },
   "site-footer": {
-    "slogan": "**",
+    "slogan": "Costruiamo soluzioni convenienti, di alta qualità, affidabili e veloci basate su Shopify",
     "columns-title": {
       "resources": "Sezioni",
       "languages": "Lingue",
@@ -21,7 +21,7 @@
   "home": {
     "seo": {
       "title": "shopmakers | i tuoi esperti shopify",
-      "description": "**"
+      "description": "Costruiamo soluzioni convenienti, di alta qualità, affidabili e veloci basate su Shopify"
     },
     "sections": {
       "hero": {
@@ -33,7 +33,7 @@
         "title": "Perché sceglierci",
         "cards": {
           "0": {
-            "title": "Perché abbiamo una lunga esperienza",
+            "title": "Perché abbiamo esperienza",
             "content": "Il nostro team professionale è ricco di talenti e in grado di rispondere alle tue esigenze. Siamo specializzati in Shopify: una soluzione flessibile ed efficiente per la tua attività."
           },
           "1": {
@@ -41,7 +41,7 @@
             "content": "I tuoi obiettivi sono al centro del nostro lavoro. Ogni cliente è unico e la nostra risposta è personalizzata. Ti proponiamo una visione olistica della complessità del mercato."
           },
           "2": {
-            "title": "**",
+            "title": "Perché ti siamo vicini",
             "content": "Ci piace costruire relazioni basate sull’ascolto. Siamo comunicativi, disponibili, flessibili ed organizzati. Amiamo creare occasioni d’incontro."
           },
           "3": {
@@ -60,11 +60,11 @@
         "cards": {
           "0": {
             "title": "User experience",
-            "content": "Aplicamos la <strong>investigación de experiencia de usuario</strong> y el <strong>diseño de interfaz</strong> para garantizar una experiencia de compra excepcional, prestando especial atención al <strong>rendimiento</strong> y la <strong>accesibilidad</strong>."
+            "content": "Garantiamo un'esperienza di acquisto eccezionale analizzando l'<strong>esperienza dei tuoi utenti</strong> e disegnando <strong>interfacce funzionali</strong>. Valutiamo con attenzione <strong>prestazioni</strong> e <strong>accessibilità</strong>."
           },
           "1": {
             "title": "Sviluppo",
-            "content": "La nostra esperienza con le più recenti tecnologie web ci permette di creare <strong>temi <i>headless</i></strong> ed <strong>applicazioni personalizzate</strong> performanti. Teniamo molto alla qualità del codice, agli standard e alle prestazioni."
+            "content": "La nostra esperienza con le più recenti tecnologie web ci permette di creare <strong>temi <i>headless</i></strong> e <strong>applicazioni personalizzate</strong>. Teniamo molto alla qualità del codice, agli standard e alle prestazioni."
           },
           "2": {
             "title": "Integrazioni",
@@ -72,7 +72,7 @@
           },
           "3": {
             "title": "Multimedia",
-            "content": "Presentiamo i tuoi prodotti e i tuoi servizi nel modo più attraente possibile. Siamo specializzati nella creazione di <strong>immagini di prodotto</strong> straordinarie, <strong>video di alta qualità</strong> e <strong>Realtà Aumentata</strong> che conquisteranno i tuoi clienti."
+            "content": "Presentiamo i tuoi prodotti e i tuoi servizi in modo gradevole e attraente. Siamo specializzati nella creazione di <strong>immagini di prodotto</strong> straordinarie, <strong>video di alta qualità</strong> e <strong>Realtà Aumentata</strong> che conquisteranno i tuoi clienti."
           }
         }
       },
@@ -86,7 +86,7 @@
           },
           "1": {
             "title": "Conveniente",
-            "content": "Shopify offre differenti piani ed abbonamenti. Rispetto agli ecommerce self-hosted, offre un eccellente rapport qualità-prezzo. Anche il piano più economico include tutte le funzioni essenziali e l'App Store vanta migliaia di applicazioni gratutite."
+            "content": "Shopify offre differenti piani ed abbonamenti. Rispetto agli ecommerce self-hosted, offre un eccellente rapporto qualità-prezzo. Anche il piano più economico include tutte le funzioni essenziali e l'App Store vanta migliaia di applicazioni gratutite."
           },
           "2": {
             "title": "Veloce e resistente",
