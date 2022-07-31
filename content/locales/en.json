@@ -103,5 +103,19 @@
   "blog": {
     "min-read": "min read",
     "published-on": "Published on"
+  },
+  "404": {
+    "title": "Sorry 😩, this page can't be found",
+    "subtitle": "The page you're looking for does not exist. It may have expired, or there could be a typo. Maybe you can find what you want from our homepage.",
+    "button": "Go Back Home"
+  },
+  "500": {
+    "title": "Wow 😱, everything broke",
+    "subtitle": "We don't know what happen but things are not working as expected... Please try again in a few minutes or just return to our homepage.",
+    "button": "Go Back Home",
+    "seo": {
+      "title": "500 – shopmakers",
+      "description": "We craft profitable, high-quality, scalable and performant solutions based on Shopify"
+    }
   }
 }

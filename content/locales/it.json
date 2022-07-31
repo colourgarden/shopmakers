@@ -103,5 +103,19 @@
   "blog": {
     "min-read": "minuti di lettura",
     "published-on": "Pubblicato il"
+  },
+  "404": {
+    "title": "Ci dispiace 😩, non riusciamo a trovare questa pagina",
+    "subtitle": "La pagina che cerchi non esiste. Può essere che non sia più disponibile o che tu l'abbia scritta male. Magari riesci a trovare quello che cerchi dalla nostra pagina d'inzio.",
+    "button": "Torna alla pagina d'inizio"
+  },
+  "500": {
+    "title": "Wow 😱, si è rotto tutto",
+    "subtitle": "Non sappiamo cosa sia successo, ma le cose non sembrano funzionare come ci aspettiamo... Per favore, prova di nuovo tra qualche minuto o semplicemente ritorna alla nostra pagina d'inizio.",
+    "button": "Torna alla pagina d'inizio",
+    "seo": {
+      "title": "500 – shopmakers",
+      "description": "Costruiamo soluzioni convenienti, di alta qualità, affidabili e veloci basate su Shopify"
+    }
   }
 }

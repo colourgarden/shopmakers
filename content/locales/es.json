@@ -95,7 +95,7 @@
         }
       },
       "blog": {
-        "id": "blog",
+        "id": "blog ",
         "title": "Blog"
       }
     }
@@ -103,5 +103,19 @@
   "blog": {
     "min-read": "minutos de lectura",
     "published-on": "Publicado el"
+  },
+  "404": {
+    "title": "Lo sentimos 😩, no podemos encontrar esta página",
+    "subtitle": "La página que buscas no existe. Es posible que haya caducado o que haya un error tipográfico. Quizás puedes encontrar lo que buscas desde nuestra página de inicio.",
+    "button": "Vuelve a la página de inicio"
+  },
+  "500": {
+    "title": "Wow 😱, está todo roto",
+    "subtitle": "No sabemos qué ha pasado pero las cosas no están funcionando como esperamos... Por favor, inténtalo de nuevo en unos minutos o simplemente regresa a nuestra página de inicio.",
+    "button": "Vuelve a la página de inicio",
+    "seo": {
+      "title": "500 – shopmakers",
+      "description": "Construimos soluciones rentables, de alta calidad, escalables y veloces basadas en Shopify"
+    }
   }
 }
