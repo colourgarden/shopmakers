@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Container from 'components/Container';
 import Section from 'components/Section';
 import BlogCard from 'components/Blog/Card';
+import Button from 'components/Button';
 
 import { getBlogsInformation } from 'utils/mdx';
 import type { GetStaticProps } from 'next';
@@ -26,12 +27,11 @@ const Home = ({ blogs }: HomeProps) => {
               <h2 className='pb-8 text-lg md:text-xl'>
                 {i18n.t('home.sections.hero.subtitle')}
               </h2>
-              <a
-                data-analytics='"QuoteRequest"'
-                className='inline-block w-fit rounded-full bg-selective-yellow py-2 px-4 text-prussian-blue'
-                href='mailto:hello@shopmakers.tech?subject=Quote Request'>
-                {i18n.t('cta.quote-request')}
-              </a>
+              <Button
+                dataAnalytics='"QuoteRequest"'
+                href='mailto:hello@shopmakers.tech?subject=Quote Request'
+                text={i18n.t('cta.quote-request')}
+              />
             </div>
             <div className='w-1/2'>
               <div className='hidden lg:block'>

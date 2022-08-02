@@ -1,6 +1,7 @@
 import { useI18n } from 'next-localization';
 import Image from 'next/image';
 import Link from 'next/link';
+import Button from './Button';
 import SiteNavigation from './SiteNavigation';
 
 const SiteHeader: React.FC = () => {
@@ -36,12 +37,11 @@ const SiteHeader: React.FC = () => {
           </div>
         </div>
         <SiteNavigation classes='hidden grid-flow-col gap-16 lg:grid' />
-        <a
-          data-analytics='"ContactUs"'
-          className='inline-block w-fit rounded-full bg-selective-yellow py-2 px-4 text-prussian-blue hover:bg-selective-yellow-300'
-          href='mailto:hello@shopmakers.tech'>
-          {i18n.t('cta.contact-us')}
-        </a>
+        <Button
+          dataAnalytics='"ContactUs"'
+          href='mailto:hello@shopmakers.tech'
+          text={i18n.t('cta.contact-us')}
+        />
       </div>
     </header>
   );

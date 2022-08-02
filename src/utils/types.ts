@@ -57,6 +57,12 @@ declare global {
     children: React.ReactNode;
   };
 
+  type ButtonProps = {
+    dataAnalytics?: string;
+    href: string;
+    text: string;
+  };
+
   type SectionProps = {
     id?: string;
     classes?: string;
