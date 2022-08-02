@@ -4,7 +4,9 @@ import matter from 'gray-matter';
 import readingTime from 'reading-time';
 
 export const getBlogs = (): string[] => {
-  return fs.readdirSync(path.join(process.cwd(), 'content/blog'));
+  return fs
+    .readdirSync(path.join(process.cwd(), 'content/blog'))
+    .filter((item) => item.endsWith('.mdx'));
 };
 
 export const getBlogBySlug = (slug: string): string => {
