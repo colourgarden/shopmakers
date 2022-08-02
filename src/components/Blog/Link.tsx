@@ -6,8 +6,7 @@ import ExternalLink from '../../icons/external-link.svg';
 
 // Component
 const BlogLink: React.FC<BlogLinkProps> = ({ href, children, ...props }) => {
-  const classes =
-    'text-blue-green rounded hover:underline focus:outline-none focus:ring-2';
+  const classes = 'link';
 
   if (href?.match(/^#/)) {
     return (

@@ -15,3 +15,7 @@
 html {
   @apply text-prussian-blue;
 }
+
+.link {
+  @apply text-blue-green rounded hover:underline focus:outline-none focus:ring-2
+}

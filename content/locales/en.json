@@ -82,7 +82,7 @@
         "cards": {
           "0": {
             "title": "Secure & Reliable",
-            "content": "Shopify takes security seriously. It implements strong access measures, protects cardholder data and maintains a vulnerability management program. All stores powered by Shopify are <a href=\"https://help.shopify.com/en/questions/compliance#/reports\">Level 1 PCI DSS compliant</a>."
+            "content": "Shopify takes security seriously. It implements strong access measures, protects cardholder data and maintains a vulnerability management program. All stores powered by Shopify are <a href=\"https://help.shopify.com/en/questions/compliance#/reports\" class=\"link\">Level 1 PCI DSS compliant</a>."
           },
           "1": {
             "title": "Affordable",

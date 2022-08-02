@@ -82,7 +82,7 @@
         "cards": {
           "0": {
             "title": "Sicuro ed affidabile",
-            "content": "Shopify considera seriamente la sicurezza. Implementa rigorosi controlli di accesso, protegge i dati dei titolari di carta di credito e mantiene un programma di gestione delle vulnerabilità. Tutti i sistemi di Shopify sono conformi agli standard PCI DSS di livello 1."
+            "content": "Shopify considera seriamente la sicurezza. Implementa rigorosi controlli di accesso, protegge i dati dei titolari di carta di credito e mantiene un programma di gestione delle vulnerabilità. Tutti i sistemi di Shopify sono conformi agli standard <a href=\"https://help.shopify.com/en/questions/compliance#/reports\" class=\"link\" hreflang=\"en\">PCI DSS di livello 1</a>."
           },
           "1": {
             "title": "Conveniente",

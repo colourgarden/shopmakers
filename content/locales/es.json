@@ -82,7 +82,7 @@
         "cards": {
           "0": {
             "title": "Seguro y fiable",
-            "content": "Shopify se toma la seguridad muy en serio. Implementa estrictos controles de acceso, protege los datos de los titulares de las tarjetas y mantiene un programa de gestión de vulnerabilidades. Todas las tiendas de Shopify cumplen con el <a href=\"https://help.shopify.com/en/questions/compliance#/reports\">nivel 1 de PCI DSS</a>."
+            "content": "Shopify se toma la seguridad muy en serio. Implementa estrictos controles de acceso, protege los datos de los titulares de las tarjetas y mantiene un programa de gestión de vulnerabilidades. Todas las tiendas de Shopify cumplen con el <a href=\"https://help.shopify.com/en/questions/compliance#/reports\" class=\"link\" hreflang=\"en\">nivel 1 de PCI DSS</a>."
           },
           "1": {
             "title": "Asequible",
