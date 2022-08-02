@@ -9,6 +9,11 @@ import type { IReadTimeResults } from 'reading-time';
 
 declare global {
   // Generics
+  type AppContextProps = {
+    children: React.ReactNode;
+    blogs: string[];
+  };
+
   type EventOptions = {
     callback?: () => void;
     props?: { [propName: string]: string };

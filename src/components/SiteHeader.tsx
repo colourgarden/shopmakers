@@ -1,6 +1,7 @@
 import { useI18n } from 'next-localization';
 import Image from 'next/image';
 import Link from 'next/link';
+import SiteNavigation from './SiteNavigation';
 
 const SiteHeader: React.FC = () => {
   const i18n = useI18n();
@@ -34,20 +35,7 @@ const SiteHeader: React.FC = () => {
             </Link>
           </div>
         </div>
-        <div className='hidden grid-flow-col gap-16 lg:grid'>
-          <Link href={`/#${i18n.t('home.sections.why-us.id')}`} passHref>
-            <a href='#dummy'>{i18n.t('navigation.why-us')}</a>
-          </Link>
-          <Link href={`/#${i18n.t('home.sections.our-services.id')}`} passHref>
-            <a href='#dummy'>{i18n.t('navigation.our-services')}</a>
-          </Link>
-          <Link href={`/#${i18n.t('home.sections.why-shopify.id')}`} passHref>
-            <a href='#dummy'>{i18n.t('navigation.why-shopify')}</a>
-          </Link>
-          <Link href={`/#${i18n.t('home.sections.blog.id')}`} passHref>
-            <a href='#dummy'>{i18n.t('navigation.blog')}</a>
-          </Link>
-        </div>
+        <SiteNavigation classes='hidden grid-flow-col gap-16 lg:grid' />
         <a
           data-analytics='"ContactUs"'
           className='inline-block w-fit rounded-full bg-selective-yellow py-2 px-4 text-prussian-blue hover:bg-selective-yellow-300'

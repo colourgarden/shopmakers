@@ -4,6 +4,7 @@ import { useRouter } from 'next/router';
 import { useI18n } from 'next-localization';
 
 import getLanguageName from '../utils/helpers';
+import SiteNavigation from './SiteNavigation';
 
 const SiteFooter = ({ alternate }: SiteFooterProps) => {
   const i18n = useI18n();
@@ -30,31 +31,12 @@ const SiteFooter = ({ alternate }: SiteFooterProps) => {
                 <h3 className='pb-2.5 uppercase'>
                   {i18n.t('site-footer.columns-title.resources')}
                 </h3>
-                <div className='flex flex-col'>
-                  <Link
-                    href={`/#${i18n.t('home.sections.why-us.id')}`}
-                    passHref>
-                    <a href='#dummy'>{i18n.t('navigation.why-us')}</a>
-                  </Link>
-                  <Link
-                    href={`/#${i18n.t('home.sections.our-services.id')}`}
-                    passHref>
-                    <a href='#dummy'>{i18n.t('navigation.our-services')}</a>
-                  </Link>
-                  <Link
-                    href={`/#${i18n.t('home.sections.why-shopify.id')}`}
-                    passHref>
-                    <a href='#dummy'>{i18n.t('navigation.why-shopify')}</a>
-                  </Link>
-                  <Link href={`/#${i18n.t('home.sections.blog.id')}`} passHref>
-                    <a href='#dummy'>{i18n.t('navigation.blog')}</a>
-                  </Link>
-                  <a
-                    data-analytics='"ContactUs"'
-                    href='mailto:hello@shopmakers.tech'>
-                    {i18n.t('cta.contact-us')}
-                  </a>
-                </div>
+                <SiteNavigation classes='flex flex-col' />
+                <a
+                  data-analytics='"ContactUs"'
+                  href='mailto:hello@shopmakers.tech'>
+                  {i18n.t('cta.contact-us')}
+                </a>
               </div>
               <div>
                 <h3 className='pb-2.5 uppercase'>
