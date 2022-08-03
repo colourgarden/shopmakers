@@ -22,9 +22,9 @@ const Container: React.FC<BlogContainer> = ({
 
   return (
     <SiteContainer seo={seo as unknown as { [key: string]: string }}>
-      <div className='container mx-auto px-4 py-10 md:py-20 lg:px-0'>
-        <article className='mx-auto w-full max-w-3xl'>
-          <h1 className='text-3xl'>{frontmatter.title}</h1>
+      <div className="container mx-auto px-4 py-10 md:py-20 lg:px-0">
+        <article className="mx-auto w-full max-w-3xl">
+          <h1 className="text-3xl">{frontmatter.title}</h1>
           <BlogRow
             tags={frontmatter.tags}
             publishedAt={frontmatter.publishedAt}

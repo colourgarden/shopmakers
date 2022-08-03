@@ -25,7 +25,12 @@
     "prettier"
   ],
   "rules": {
-    "prettier/prettier": "error",
+    "prettier/prettier": [
+      "error",
+      {
+        "jsxSingleQuote": false
+      }
+    ],
     "react/react-in-jsx-scope": "off",
     "react/prop-types": "off"
   },

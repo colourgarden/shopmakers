@@ -27,35 +27,35 @@ class MyDocument extends Document<DocumentProps & MyDocumentsProps> {
     const { nonce } = this.props;
 
     return (
-      <Html className='scroll-smooth' dir='ltr'>
+      <Html className="scroll-smooth" dir="ltr">
         <Head nonce={nonce}>
           <link
-            rel='preload'
-            href='/fonts/jost.woff2'
-            as='font'
-            type='font/woff2'
-            crossOrigin='anonymous'
+            rel="preload"
+            href="/fonts/jost.woff2"
+            as="font"
+            type="font/woff2"
+            crossOrigin="anonymous"
           />
-          <link rel='shortcut icon' href='/favicons/favicon.ico' />
+          <link rel="shortcut icon" href="/favicons/favicon.ico" />
           <link
-            rel='icon'
-            type='image/png'
-            href='/favicons/favicon-32x32.png'
-            sizes='32x32'
-          />
-          <link
-            rel='icon'
-            type='image/png'
-            href='/favicons/favicon-16x16.png'
-            sizes='16x16'
+            rel="icon"
+            type="image/png"
+            href="/favicons/favicon-32x32.png"
+            sizes="32x32"
           />
           <link
-            rel='apple-touch-icon'
-            href='/favicons/apple-touch-icon.png'
-            sizes='180x180'
+            rel="icon"
+            type="image/png"
+            href="/favicons/favicon-16x16.png"
+            sizes="16x16"
+          />
+          <link
+            rel="apple-touch-icon"
+            href="/favicons/apple-touch-icon.png"
+            sizes="180x180"
           />
           <meta
-            httpEquiv='Content-Security-Policy'
+            httpEquiv="Content-Security-Policy"
             content={createCSP(nonce)}
           />
           {process.env.NODE_ENV === 'production' && (
@@ -64,8 +64,8 @@ class MyDocument extends Document<DocumentProps & MyDocumentsProps> {
                 async
                 defer
                 nonce={nonce}
-                data-domain='shopmakers.tech'
-                src='https://plausible.io/js/plausible.js'
+                data-domain="shopmakers.tech"
+                src="https://plausible.io/js/plausible.js"
               />
               <script
                 nonce={nonce}

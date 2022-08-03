@@ -18,15 +18,15 @@ const Custom404: React.FC = () => {
 
   return (
     <Container seo={i18n.t('404.seo') as unknown as { [key: string]: string }}>
-      <div className='container mx-auto max-w-2xl px-4 py-20 lg:px-0'>
-        <h1 className='sm:text-5xl my-8 text-3xl font-bold'>
+      <div className="container mx-auto max-w-2xl px-4 py-20 lg:px-0">
+        <h1 className="sm:text-5xl my-8 text-3xl font-bold">
           {i18n.t('404.title')}
         </h1>
-        <p className='mb-8'>{i18n.t('404.subtitle')}</p>
-        <NextLink href='/' passHref>
-          <a href='#dummy' className='inline-flex items-center hover:underline'>
+        <p className="mb-8">{i18n.t('404.subtitle')}</p>
+        <NextLink href="/" passHref>
+          <a href="#dummy" className="inline-flex items-center hover:underline">
             {i18n.t('404.button')}
-            <span className='ml-2 mt-1' aria-hidden>
+            <span className="ml-2 mt-1" aria-hidden>
               <Arrow width={16} />
             </span>
           </a>

@@ -58,10 +58,10 @@ const Preformatted: React.FC<BlogPreformattedProps> = ({
       <button
         onClick={copyToClipboard}
         className={`absolute bottom-1 right-3 inline-flex text-xs md:bottom-2 md:right-4 ${color} rounded p-0.5 font-medium uppercase opacity-0 hover:opacity-100 focus:opacity-100 focus:outline-none focus:ring-2 group-hover:opacity-100 group-focus:opacity-100`}
-        type='button'
+        type="button"
         aria-label={i18n.t(`blog.${copy}`)}
         title={i18n.t(`blog.${copy}`)}>
-        <span className='mr-1'>{i18n.t(`blog.${copy}`)}</span>
+        <span className="mr-1">{i18n.t(`blog.${copy}`)}</span>
         {copy === 'copy' && <CopyIcon width={16} height={16} aria-hidden />}
         {copy === 'copy-success' && (
           <CopySuccessIcon width={16} height={16} aria-hidden />

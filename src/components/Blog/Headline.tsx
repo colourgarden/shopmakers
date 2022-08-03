@@ -61,7 +61,7 @@ const BlogHeadline: React.FC<HeadingProps> = ({
         style={{ scrollMarginTop: '142px' }}
         className={`align-text-middle inline-block transform md:absolute md:left-0 md:-translate-x-8 ${translate} ml-2 rounded opacity-0 hover:opacity-70 focus:opacity-70 focus:outline-none focus:ring-2 group-hover:opacity-70 group-focus:opacity-70 md:ml-0`}>
         <LinkIcon width={24} />
-        <span className='sr-only'>{i18n.t('blog.anchor')}</span>
+        <span className="sr-only">{i18n.t('blog.anchor')}</span>
       </a>
     </Component>
   );

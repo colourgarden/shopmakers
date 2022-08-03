@@ -19,11 +19,11 @@ const BlogLink: React.FC<BlogLinkProps> = ({ href, children, ...props }) => {
       <a
         className={classes}
         href={href}
-        target='_blank'
-        rel='noopener noreferrer'
+        target="_blank"
+        rel="noopener noreferrer"
         {...props}>
         {children}
-        <ExternalLink width={16} className='inline-block pl-0.5 pb-0.5' />
+        <ExternalLink width={16} className="inline-block pl-0.5 pb-0.5" />
       </a>
     );
   } else {

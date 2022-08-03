@@ -22,44 +22,44 @@ const Container: React.FC<ContainerProps> = ({ children, seo = {} }) => {
     <>
       <Head>
         <title>{meta.title}</title>
-        <meta name='description' content={meta.description} />
-        <meta name='robots' content='index,follow' />
-        <meta name='googlebot' content='index,follow' />
+        <meta name="description" content={meta.description} />
+        <meta name="robots" content="index,follow" />
+        <meta name="googlebot" content="index,follow" />
         <link
-          rel='alternate'
+          rel="alternate"
           href={`https://shopmakers.tech${
             isArticle && meta.locale !== 'en'
               ? meta?.alternate?.en
               : router.asPath
           }`}
-          hrefLang='en'
+          hrefLang="en"
         />
         <link
-          rel='alternate'
+          rel="alternate"
           href={`https://shopmakers.tech/es${
             isArticle && meta.locale !== 'es'
               ? meta?.alternate?.es
               : router.asPath
           }`}
-          hrefLang='es'
+          hrefLang="es"
         />
         <link
-          rel='alternate'
+          rel="alternate"
           href={`https://shopmakers.tech/it${
             isArticle && meta.locale !== 'it'
               ? meta?.alternate?.it
               : router.asPath
           }`}
-          hrefLang='it'
+          hrefLang="it"
         />
         <link
-          rel='alternate'
+          rel="alternate"
           href={`https://shopmakers.tech${
             isArticle && meta.locale !== 'en'
               ? meta?.alternate?.en
               : router.asPath
           }`}
-          hrefLang='x-default'
+          hrefLang="x-default"
         />
       </Head>
       <SiteHeader />
