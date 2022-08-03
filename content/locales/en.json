@@ -7,7 +7,10 @@
   },
   "cta": {
     "contact-us": "Contact Us",
-    "quote-request": "Request a quote"
+    "quote-request": {
+      "text": "Request a quote",
+      "mail-subject": "Quote Request"
+    }
   },
   "site-footer": {
     "slogan": "We craft profitable, high-quality, scalable and performant solutions based on Shopify",
@@ -26,7 +29,8 @@
     "sections": {
       "hero": {
         "title": "Boost your business with a first class ecommerce",
-        "subtitle": "We craft profitable, high-quality, scalable and performant solutions based on Shopify"
+        "subtitle": "We craft profitable, high-quality, scalable and performant solutions based on Shopify",
+        "illustration-alt": "Two people shopping on a beautiful Shopify based ecommerce."
       },
       "why-us": {
         "id": "why-us",
@@ -74,7 +78,8 @@
             "title": "Media Contents",
             "content": "We present your products and services in the most attractive way. We specialise in creating stunning <strong>product images</strong>, awesome <strong>high-quality videos</strong> and <strong>AR experiences</strong> that will enchant your customers."
           }
-        }
+        },
+        "illustration-alt": "A person running out of a mobile device with cart full of great products."
       },
       "why-shopify": {
         "id": "why-shopify",
@@ -92,7 +97,8 @@
             "title": "Performant & Scalable",
             "content": "Shopify can equip your site to easily handle high traffic volumes and sales spikes. Shopify cloud-based infrastructure is designed for resiliency, with servers capable of handling thousands of transactions per minute. The result is 99.99% uptime."
           }
-        }
+        },
+        "illustration-alt": "An user managing with ease a well developed ecommerce."
       },
       "blog": {
         "id": "blog",

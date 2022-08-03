@@ -29,8 +29,10 @@ const Home = ({ blogs }: HomeProps) => {
               </h2>
               <Button
                 dataAnalytics='"QuoteRequest"'
-                href="mailto:hello@shopmakers.tech?subject=Quote Request"
-                text={i18n.t('cta.quote-request')}
+                href={`mailto:hello@shopmakers.tech?subject=${i18n.t(
+                  'cta.quote-request.mail-subject',
+                )}`}
+                text={i18n.t('cta.quote-request.text')}
               />
             </div>
             <div className="w-1/2">
@@ -39,7 +41,7 @@ const Home = ({ blogs }: HomeProps) => {
                   src="/images/illustrations/hero.svg"
                   width={584}
                   height={328}
-                  alt="Two people shopping on a beautiful Shopify based ecommerce."
+                  alt={i18n.t('home.sections.hero.illustration-alt')}
                 />
               </div>
             </div>
@@ -80,7 +82,7 @@ const Home = ({ blogs }: HomeProps) => {
                   width={526}
                   height={462}
                   loading="lazy"
-                  alt="A person running out of a mobile device with cart full of great products."
+                  alt={i18n.t('home.sections.services.illustration-alt')}
                 />
               </div>
               <div className="grid gap-6 md:grid-cols-2 md:grid-rows-2 lg:w-1/2">
@@ -136,7 +138,7 @@ const Home = ({ blogs }: HomeProps) => {
                   width={560}
                   height={356}
                   loading="lazy"
-                  alt="A person managing with ease a great developed ecommerce."
+                  alt={i18n.t('home.sections.why-shopify.illustration-alt')}
                 />
               </div>
             </div>

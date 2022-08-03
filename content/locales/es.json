@@ -7,7 +7,13 @@
   },
   "cta": {
     "contact-us": "Contáctanos",
-    "quote-request": "Solicita presupuesto"
+    "cta": {
+      "contact-us": "Contattaci",
+      "quote-request": {
+        "text": "Solicita presupuesto",
+        "mail-subject": "Solicitud de presupuesto"
+      }
+    }
   },
   "site-footer": {
     "slogan": "Construimos soluciones rentables, de alta calidad, escalables y veloces basadas en Shopify",
@@ -26,7 +32,8 @@
     "sections": {
       "hero": {
         "title": "Impulsa tu negocio con un ecommerce de primera",
-        "subtitle": "Construimos soluciones rentables, de alta calidad, escalables y veloces basadas en Shopify"
+        "subtitle": "Construimos soluciones rentables, de alta calidad, escalables y veloces basadas en Shopify",
+        "illustration-alt": "Dos personas comprando en un bonito ecommerce basado en Shopify."
       },
       "why-us": {
         "id": "por-que-elegirnos",
@@ -74,7 +81,8 @@
             "title": "Multimedia",
             "content": "Presentamos sus productos y servicios de la forma más atractiva. Nos especializamos en la creación de impactantes <strong>imágenes de productos</strong>, <strong>vídeos de alta calidad</strong> y <strong>Realidad Aumentada</strong> que encantarán a tus clientes."
           }
-        }
+        },
+        "illustration-alt": "Una persona sale de un dispositivo móvil con un carrito lleno de buenos productos."
       },
       "why-shopify": {
         "id": "por-que-shopify",
@@ -92,7 +100,8 @@
             "title": "Veloz y escalable",
             "content": "Shopify puede preparar tu sitio para manejar fácilmente altos volúmenes de tráfico y picos de ventas. La infraestructura basada en la nube de Shopify está diseñada para ser resistente, con servidores capaces de manejar miles de transacciones por minuto. El resultado es un 99,99% de tiempo de disponibilidad."
           }
-        }
+        },
+        "illustration-alt": "Un usuario que gestiona fácilmente un ecommerce bien desarrollado."
       },
       "blog": {
         "id": "blog ",

@@ -7,7 +7,10 @@
   },
   "cta": {
     "contact-us": "Contattaci",
-    "quote-request": "Chiedi un preventivo"
+    "quote-request": {
+      "text": "Chiedi un preventivo",
+      "mail-subject": "Richiesta preventivo"
+    }
   },
   "site-footer": {
     "slogan": "Costruiamo soluzioni convenienti, di alta qualità, affidabili e veloci basate su Shopify",
@@ -21,7 +24,8 @@
   "home": {
     "seo": {
       "title": "shopmakers | i tuoi esperti shopify",
-      "description": "Costruiamo soluzioni convenienti, di alta qualità, affidabili e veloci basate su Shopify"
+      "description": "Costruiamo soluzioni convenienti, di alta qualità, affidabili e veloci basate su Shopify",
+      "illustration-alt": "Due persone che fanno acquisti su un bellissimo ecommerce basato su Shopify."
     },
     "sections": {
       "hero": {
@@ -74,7 +78,8 @@
             "title": "Multimedia",
             "content": "Presentiamo i tuoi prodotti e i tuoi servizi in modo gradevole e attraente. Siamo specializzati nella creazione di <strong>immagini di prodotto</strong> straordinarie, <strong>video di alta qualità</strong> e <strong>Realtà Aumentata</strong> che conquisteranno i tuoi clienti."
           }
-        }
+        },
+        "illustration-alt": "Una persona che esce da un dispositivo mobile con il carrello pieno di ottimi prodotti."
       },
       "why-shopify": {
         "id": "perche-shopify",
@@ -92,7 +97,8 @@
             "title": "Veloce e resistente",
             "content": "Shopify è in grado di preparare il vostro sito per gestire facilmente alti volumi di traffico e picchi di vendita. L'infrastruttura basata sul cloud di Shopify è progettata per essere resistente, con server in grado di gestire migliaia di transazioni al minuto. Il risultato è un uptime del 99,99%."
           }
-        }
+        },
+        "illustration-alt": "Un utente che gestisce facilmente un ecommerce ben sviluppato."
       },
       "blog": {
         "id": "blog",
