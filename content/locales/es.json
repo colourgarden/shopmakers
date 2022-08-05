@@ -7,12 +7,9 @@
   },
   "cta": {
     "contact-us": "Contáctanos",
-    "cta": {
-      "contact-us": "Contattaci",
-      "quote-request": {
-        "text": "Solicita presupuesto",
-        "mail-subject": "Solicitud de presupuesto"
-      }
+    "quote-request": {
+      "text": "Solicita presupuesto",
+      "mail-subject": "Solicitud de presupuesto"
     }
   },
   "site-footer": {
