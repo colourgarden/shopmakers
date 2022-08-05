@@ -52,7 +52,7 @@ const BlogHeadline: React.FC<HeadingProps> = ({
 
   return (
     <Component
-      className={`group relative break-all ${size} mt-8 mb-6 flex items-center`}
+      className={`group relative break-words ${size} mt-8 mb-6 flex items-center`}
       {...props}>
       {children}
       <a
