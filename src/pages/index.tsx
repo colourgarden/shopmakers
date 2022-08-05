@@ -21,8 +21,8 @@ const Home = ({ blogs }: HomeProps) => {
       <Container
         seo={i18n.t('home.seo') as unknown as { [key: string]: string }}>
         <Section id="hero" classes="bg-light-cornflower-blue-200">
-          <div className="flex flex-col md:flex-row">
-            <div className="flex flex-col justify-center lg:w-1/2">
+          <div className="flex flex-col items-center justify-center md:flex-row">
+            <div className="order-2 flex flex-col md:order-1 md:w-3/4 lg:w-1/2">
               <h1 className="pb-8 text-2xl md:text-3xl">
                 {i18n.t('home.sections.hero.title')}
               </h1>
@@ -37,15 +37,13 @@ const Home = ({ blogs }: HomeProps) => {
                 text={i18n.t('cta.quote-request.text')}
               />
             </div>
-            <div className="w-1/2">
-              <div className="hidden lg:block">
-                <Image
-                  src="/images/illustrations/hero.svg"
-                  width={584}
-                  height={328}
-                  alt={i18n.t('home.sections.hero.illustration-alt')}
-                />
-              </div>
+            <div className="order-1 flex w-full justify-center pb-12 md:order-2 md:hidden md:w-1/2 md:pb-0 lg:block ">
+              <Image
+                src="/images/illustrations/hero.svg"
+                width={584}
+                height={328}
+                alt={i18n.t('home.sections.hero.illustration-alt')}
+              />
             </div>
           </div>
         </Section>
