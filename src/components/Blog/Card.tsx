@@ -15,7 +15,7 @@ const Card = ({ title, description, slug, publishedAt }: BlogCardProps) => {
   const locale = router.locale ?? 'en-US';
 
   return (
-    <article className="w-1/4">
+    <article className="w-full">
       <div className="mb-4 inline-block bg-prussian-blue px-3 py-0.5 text-sm uppercase text-coconut">
         {formatDate(locale, new Date(publishedAt))}
       </div>

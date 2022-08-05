@@ -154,7 +154,7 @@ const Home = ({ blogs }: HomeProps) => {
               <h2 className="pb-16 text-2xl">
                 {i18n.t('home.sections.blog.title')}
               </h2>
-              <div className="flex gap-x-8">
+              <div className="grid grid-cols-auto-fill-200 gap-y-16 gap-x-8 lg:grid-cols-4 lg:gap-y-0">
                 {blogs.map((blog) => (
                   <BlogCard key={blog.slug} {...blog} />
                 ))}

@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       gridTemplateColumns: {
         'auto-fill-100': 'repeat(auto-fill, minmax(140px, 1fr))',
+        'auto-fill-200': 'repeat(auto-fill, minmax(280px, 1fr))',
       },
     },
     colors: {
