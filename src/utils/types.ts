@@ -58,7 +58,7 @@ declare global {
   };
 
   type ButtonProps = {
-    dataAnalytics?: string;
+    onClick?: React.MouseEventHandler;
     href: string;
     text: string;
   };

@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useI18n } from 'next-localization';
+import { usePlausible } from 'next-plausible';
 
 import getLanguageName from '../utils/helpers';
 import SiteNavigation from './SiteNavigation';
@@ -9,6 +10,7 @@ import SiteNavigation from './SiteNavigation';
 const SiteFooter = ({ alternate }: SiteFooterProps) => {
   const i18n = useI18n();
   const router = useRouter();
+  const plausible = usePlausible();
 
   return (
     <footer className="bg-prussian-blue text-coconut">
@@ -33,7 +35,13 @@ const SiteFooter = ({ alternate }: SiteFooterProps) => {
                 </h3>
                 <SiteNavigation classes="flex flex-col" />
                 <a
-                  data-analytics='"ContactUs"'
+                  onClick={() =>
+                    plausible('ContactUs', {
+                      props: {
+                        location: 'footerNav',
+                      },
+                    })
+                  }
                   href="mailto:hello@shopmakers.tech">
                   {i18n.t('cta.contact-us')}
                 </a>
@@ -81,7 +89,13 @@ const SiteFooter = ({ alternate }: SiteFooterProps) => {
                   08005 Barcelona, Spain
                   <br />
                   <a
-                    data-analytics='"ContactUs"'
+                    onClick={() =>
+                      plausible('ContactUs', {
+                        props: {
+                          location: 'footerContacts',
+                        },
+                      })
+                    }
                     href="mailto:hello@shopmakers.tech">
                     hello@shopmakers.tech
                   </a>

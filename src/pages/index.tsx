@@ -1,5 +1,6 @@
 import { useI18n } from 'next-localization';
 import Image from 'next/image';
+import { usePlausible } from 'next-plausible';
 
 import Container from 'components/Container';
 import Section from 'components/Section';
@@ -13,6 +14,7 @@ import { AppContext } from '../contexts/AppContext';
 
 const Home = ({ blogs }: HomeProps) => {
   const i18n = useI18n();
+  const plausible = usePlausible();
 
   return (
     <AppContext blogs={blogs.map(({ slug }) => slug)}>
@@ -28,7 +30,7 @@ const Home = ({ blogs }: HomeProps) => {
                 {i18n.t('home.sections.hero.subtitle')}
               </h2>
               <Button
-                dataAnalytics='"QuoteRequest"'
+                onClick={() => plausible('QuoteRequest')}
                 href={`mailto:hello@shopmakers.tech?subject=${i18n.t(
                   'cta.quote-request.mail-subject',
                 )}`}

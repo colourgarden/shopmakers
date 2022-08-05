@@ -1,11 +1,14 @@
 import { useI18n } from 'next-localization';
 import Image from 'next/image';
 import Link from 'next/link';
+import { usePlausible } from 'next-plausible';
+
 import Button from './Button';
 import SiteNavigation from './SiteNavigation';
 
 const SiteHeader: React.FC = () => {
   const i18n = useI18n();
+  const plausible = usePlausible();
 
   return (
     <header className="sticky top-0 z-50 bg-coconut drop-shadow-sm">
@@ -38,7 +41,13 @@ const SiteHeader: React.FC = () => {
         </div>
         <SiteNavigation classes="hidden grid-flow-col gap-16 lg:grid" />
         <Button
-          dataAnalytics='"ContactUs"'
+          onClick={() =>
+            plausible('ContactUs', {
+              props: {
+                location: 'siteHeader',
+              },
+            })
+          }
           href="mailto:hello@shopmakers.tech"
           text={i18n.t('cta.contact-us')}
         />

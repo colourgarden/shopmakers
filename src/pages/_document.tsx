@@ -58,23 +58,6 @@ class MyDocument extends Document<DocumentProps & MyDocumentsProps> {
             httpEquiv="Content-Security-Policy"
             content={createCSP(nonce)}
           />
-          {process.env.NODE_ENV === 'production' && (
-            <>
-              <script
-                async
-                defer
-                nonce={nonce}
-                data-domain="shopmakers.tech"
-                src="https://plausible.io/js/plausible.js"
-              />
-              <script
-                nonce={nonce}
-                dangerouslySetInnerHTML={{
-                  __html: `window.plausible=window.plausible||function(){(window.plausible.q=window.plausible.q||[]).push(arguments)};`,
-                }}
-              />
-            </>
-          )}
         </Head>
         <body>
           <Main />
