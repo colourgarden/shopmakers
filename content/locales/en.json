@@ -10,7 +10,8 @@
     "quote-request": {
       "text": "Request a quote",
       "mail-subject": "Quote Request"
-    }
+    },
+    "read-more": "Read more"
   },
   "site-footer": {
     "slogan": "We craft profitable, high-quality, scalable and performant solutions based on Shopify",

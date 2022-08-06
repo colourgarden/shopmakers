@@ -1,6 +1,7 @@
 // External dependencies
 import { useRouter } from 'next/router';
 import Link from 'next/link';
+import { useI18n } from 'next-localization';
 
 // Utils functions
 import formatDate from 'utils/date';
@@ -13,6 +14,7 @@ import ArrowLink from '../../icons/arrow.svg';
 const Card = ({ title, description, slug, publishedAt }: BlogCardProps) => {
   const router = useRouter();
   const locale = router.locale ?? 'en-US';
+  const i18n = useI18n();
 
   return (
     <article className="w-full">
@@ -31,7 +33,8 @@ const Card = ({ title, description, slug, publishedAt }: BlogCardProps) => {
         <a
           className="rounded hover:underline focus:outline-none focus:ring-2"
           href="#dummy">
-          Read more <ArrowLink className="inline-block" width={16} />
+          {i18n.t('cta.read-more')}
+          <ArrowLink className="inline-block" width={16} />
         </a>
       </Link>
     </article>
