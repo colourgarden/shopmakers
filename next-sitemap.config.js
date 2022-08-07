@@ -4,6 +4,16 @@ const config = {
   siteUrl: process.env.SITE_URL || 'https://shopmakers.tech',
   generateRobotsTxt: true,
   exclude: ['/404', '/es/404', '/it/404', '/500', '/es/500', '/it/500'],
+  alternateRefs: [
+    {
+      href: 'https://shopmakers.tech/es',
+      hreflang: 'es',
+    },
+    {
+      href: 'https://shopmakers.tech/it',
+      hreflang: 'it',
+    },
+  ],
 };
 
 /**
