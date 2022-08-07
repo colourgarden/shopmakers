@@ -34,7 +34,7 @@ const Card = ({ title, description, slug, publishedAt }: BlogCardProps) => {
           className="rounded hover:underline focus:outline-none focus:ring-2"
           href="#dummy">
           {i18n.t('cta.read-more')}
-          <ArrowLink className="inline-block" width={16} />
+          <ArrowLink className="ml-1 inline-block" width={16} />
         </a>
       </Link>
     </article>
