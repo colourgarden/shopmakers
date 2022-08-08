@@ -29,6 +29,11 @@ const Container: React.FC<ContainerProps> = ({ children, seo = {} }) => {
     );
   };
 
+  const canonical =
+    router.locale === 'en'
+      ? router.asPath.replace(/\/$/, '')
+      : `/${router.locale}${router.asPath.replace(/\/$/, '')}`;
+
   return (
     <>
       <Head>
@@ -41,6 +46,7 @@ const Container: React.FC<ContainerProps> = ({ children, seo = {} }) => {
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
         <meta name="HandheldFriendly" content="true" />
+        <link rel="canonical" href={`https://shopmakers.tech${canonical}`} />
         {isArticle && typeof meta.alternate === 'object'
           ? Object.entries(meta.alternate)?.map(([locale, slug]) => {
               return AlternateLink(locale, `/${locale}${slug}`);
