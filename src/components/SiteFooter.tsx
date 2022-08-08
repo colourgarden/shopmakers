@@ -1,15 +1,12 @@
 import Image from 'next/image';
-import Link from 'next/link';
-import { useRouter } from 'next/router';
 import { useI18n } from 'next-localization';
 import { usePlausible } from 'next-plausible';
 
-import getLanguageName from '../utils/helpers';
 import SiteNavigation from './SiteNavigation';
+import LanguageSwitcher from './LanguageSwitcher';
 
 const SiteFooter = ({ alternate }: SiteFooterProps) => {
   const i18n = useI18n();
-  const router = useRouter();
   const plausible = usePlausible();
 
   return (
@@ -51,32 +48,7 @@ const SiteFooter = ({ alternate }: SiteFooterProps) => {
                   {i18n.t('site-footer.columns-title.languages')}
                 </h3>
                 <div className="flex flex-col">
-                  <ul className="list-none">
-                    {router.locales?.map((locale, index) => {
-                      return (
-                        <li key={index}>
-                          {/**
-                           * passHref + dummy a href is a necessary workaround
-                           * to fix a well known bug on the Next.js Link API
-                           * that causes eslint-plugin-jsx-a11y to report a
-                           * false error.
-                           * @see https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/issues/402
-                           */}
-
-                          <Link
-                            href={
-                              typeof alternate !== 'object'
-                                ? `/${locale}`
-                                : `/${locale}${alternate[locale]}`
-                            }
-                            passHref
-                            locale={locale}>
-                            <a href="#dummy">{getLanguageName(locale)}</a>
-                          </Link>
-                        </li>
-                      );
-                    })}
-                  </ul>
+                  {alternate && <LanguageSwitcher alternate={alternate} />}
                 </div>
               </div>
               <div>

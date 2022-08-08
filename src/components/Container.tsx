@@ -18,6 +18,17 @@ const Container: React.FC<ContainerProps> = ({ children, seo = {} }) => {
 
   const isArticle = meta.type === 'article';
 
+  const AlternateLink = (locale: string, url: string) => {
+    return (
+      <link
+        key={locale}
+        rel="alternate"
+        href={`https://shopmakers.tech${url}`}
+        hrefLang={locale}
+      />
+    );
+  };
+
   return (
     <>
       <Head>
@@ -25,39 +36,23 @@ const Container: React.FC<ContainerProps> = ({ children, seo = {} }) => {
         <meta name="description" content={meta.description} />
         <meta name="robots" content="index,follow" />
         <meta name="googlebot" content="index,follow" />
+        {isArticle && typeof meta.alternate === 'object'
+          ? Object.entries(meta.alternate)?.map(([locale, slug]) => {
+              return AlternateLink(locale, `/${locale}${slug}`);
+            })
+          : router.locales?.map((locale) => {
+              const url =
+                router.asPath === '/'
+                  ? `/${locale}`
+                  : `/${locale}${router.asPath}`;
+              return AlternateLink(locale, url);
+            })}
         <link
           rel="alternate"
           href={`https://shopmakers.tech${
             isArticle && meta.locale !== 'en'
               ? meta?.alternate?.en
-              : router.asPath
-          }`}
-          hrefLang="en"
-        />
-        <link
-          rel="alternate"
-          href={`https://shopmakers.tech/es${
-            isArticle && meta.locale !== 'es'
-              ? meta?.alternate?.es
-              : router.asPath
-          }`}
-          hrefLang="es"
-        />
-        <link
-          rel="alternate"
-          href={`https://shopmakers.tech/it${
-            isArticle && meta.locale !== 'it'
-              ? meta?.alternate?.it
-              : router.asPath
-          }`}
-          hrefLang="it"
-        />
-        <link
-          rel="alternate"
-          href={`https://shopmakers.tech${
-            isArticle && meta.locale !== 'en'
-              ? meta?.alternate?.en
-              : router.asPath
+              : router.asPath.replace(/\/$/, '')
           }`}
           hrefLang="x-default"
         />
