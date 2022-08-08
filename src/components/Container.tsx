@@ -67,6 +67,26 @@ const Container: React.FC<ContainerProps> = ({ children, seo = {} }) => {
           }`}
           hrefLang="x-default"
         />
+        {isArticle && (
+          <>
+            {meta.publishedAt && (
+              <meta
+                property="article:published_time"
+                content={new Date(meta.publishedAt).toISOString()}
+              />
+            )}
+            {meta?.modifiedAt && (
+              <meta
+                property="article:modified_time"
+                content={new Date(meta.modifiedAt).toISOString()}
+              />
+            )}
+            <meta property="article:author" content="shopmakers team" />
+            {(meta.tags as unknown as string[]).map((tag) => (
+              <meta key={tag} property="article:tag" content={tag} />
+            ))}
+          </>
+        )}
       </Head>
       <SiteHeader />
       <main>{children}</main>

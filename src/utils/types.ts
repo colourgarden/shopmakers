@@ -46,6 +46,9 @@ declare global {
     type: string;
     image: string;
     imageAlt: string;
+    publishedAt?: string | number | Date;
+    modifiedAt?: Date;
+    tags?: string;
     alternate?: Alternate;
     locale?: string;
     title?: string;
