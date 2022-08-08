@@ -36,6 +36,11 @@ const Container: React.FC<ContainerProps> = ({ children, seo = {} }) => {
         <meta name="description" content={meta.description} />
         <meta name="robots" content="index,follow" />
         <meta name="googlebot" content="index,follow" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <meta name="HandheldFriendly" content="true" />
         {isArticle && typeof meta.alternate === 'object'
           ? Object.entries(meta.alternate)?.map(([locale, slug]) => {
               return AlternateLink(locale, `/${locale}${slug}`);
