@@ -46,6 +46,13 @@ const Container: React.FC<ContainerProps> = ({ children, seo = {} }) => {
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
         <meta name="HandheldFriendly" content="true" />
+        <link
+          rel="preload"
+          href="/fonts/jost.woff2"
+          as="font"
+          type="font/woff2"
+          crossorigin
+        >
         <link rel="canonical" href={`https://shopmakers.tech${canonical}`} />
         {isArticle && typeof meta.alternate === 'object'
           ? Object.entries(meta.alternate)?.map(([locale, slug]) => {
