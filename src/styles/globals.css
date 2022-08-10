@@ -2,20 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-@supports (font-variation-settings: normal) {
-  @font-face {
-    font-family: 'Jost';
-    font-style: normal;
-    font-weight: 200 600;
-    font-display: swap;
-    src: url('/fonts/jost.woff2') format('woff2');
+@layer base {
+  @supports (font-variation-settings: normal) {
+    @font-face {
+      font-family: 'Jost';
+      font-style: normal;
+      font-weight: 200 600;
+      font-display: swap;
+      src: url('/fonts/jost.woff2') format('woff2');
+    }
   }
-}
 
-html {
-  @apply text-prussian-blue;
-}
+  html {
+    @apply text-prussian-blue;
+  }
 
-.link {
-  @apply text-blue-green rounded hover:underline focus:outline-none focus:ring-2
+  p a {
+    @apply text-blue-green rounded hover:underline focus:outline-none focus:ring-2
+  }
 }
